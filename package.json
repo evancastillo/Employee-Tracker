@@ -1,28 +1,32 @@
 {
   "name": "employee-tracker",
   "version": "1.0.0",
-  "description": "AS A business owner I WANT to be able to view and manage the departments, roles, and employees in my company SO THAT I can organize and plan my business",
+  "description": "An app to help business owners view and manage their company's departments, roles, and employees",
   "main": "server.js",
-  "dependencies": {
-    "console.table": "^0.10.0",
-    "inquirer": "^8.1.0",
-    "mysql": "^2.18.1",
-    "mysql2": "^2.2.5",
-    "node": "^16.1.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/evancastillo/Employee-Tracker.git"
+    "url": "git+github.com:evancastillo/Employee-Tracker.git"
   },
-  "author": "",
+  "keywords": [],
+  "author": "Evan",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/evancastillo/Employee-Tracker/issues"
   },
-  "homepage": "https://github.com/evancastillo/Employee-Tracker#readme"
+  "homepage": "https://github.com/evancastillo/Employee-Tracker#readme",
+  "dependencies": {
+    "console.table": "^0.10.0",
+    "dotenv": "^10.0.0",
+    "inquirer": "^8.1.0",
+    "mysql2": "^2.2.5",
+    "node": "^16.3.0"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "devDependencies": {}
 }
