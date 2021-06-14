@@ -37,47 +37,47 @@ function mainMenu() {
     .then(actionData => {
       switch (actionData.action) {
         case 'View employees':
-          Employees.viewEmployees(db).then(mainMenu);  // return to the action menu
+          Employees.viewEmployees(db).then(mainMenu);
           break;
 
         case 'Add an employee':
-          Employees.addEmployee(db).then(mainMenu);  // return to the action menu
+          Employees.addEmployee(db).then(mainMenu);
           break;
 
         case 'Update an employee':
-          Employees.updateEmployee(db).then(mainMenu);  // return to the action menu
+          Employees.updateEmployee(db).then(mainMenu);
           break;
 
         case 'Delete an employee':
-          Employees.deleteEmployee(db).then(mainMenu);  // return to the action menu
+          Employees.deleteEmployee(db).then(mainMenu);
           break;
 
         case 'View departments':
-          Departments.viewDepartments(db).then(mainMenu);  // return to the action menu
+          Departments.viewDepartments(db).then(mainMenu);
           break;
 
         case 'View department budget':
-          Departments.viewBudget(db).then(mainMenu);  // return to the action menu
+          Departments.viewBudget(db).then(mainMenu);
           break;
 
         case 'Add a department':
-          Departments.addDepartment(db).then(mainMenu);  // return to the action menu
+          Departments.addDepartment(db).then(mainMenu);
           break;
 
         case 'Delete a department':
-          Departments.deleteDepartment(db).then(mainMenu);  // return to the action menu
+          Departments.deleteDepartment(db).then(mainMenu);
           break;
 
         case 'View roles':
-          Roles.viewRoles(db).then(mainMenu);  // return to the action menu
+          Roles.viewRoles(db).then(mainMenu);
           break;
 
         case 'Add a role':
-          Roles.addRole(db).then(mainMenu);  // return to the action menu
+          Roles.addRole(db).then(mainMenu);
           break;
 
         case 'Delete a role':
-          Roles.deleteRole(db).then(mainMenu);  // return to the action menu
+          Roles.deleteRole(db).then(mainMenu);
           break;
 
         default:
@@ -99,7 +99,6 @@ mysql.createConnection({
 })
   .then(conn => {
     db = conn;
-    // console.log('Connected to employees database');
     console.clear();
     console.log(`
    EMPLOYEE TRACKER`);
